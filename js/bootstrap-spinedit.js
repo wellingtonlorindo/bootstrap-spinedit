@@ -149,7 +149,7 @@
         _keypress: function (event) {
             var key = event.keyCode || event.charCode;
             // Allow: -
-            if (key == 45) {
+            if (key == 45 || key == 37 || key == 39 || key == 8) {
                 return;
             }
             // Allow decimal separator (. or ,)
